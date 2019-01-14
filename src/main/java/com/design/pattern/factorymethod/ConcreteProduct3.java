@@ -6,6 +6,7 @@ package com.design.pattern.factorymethod;
  * @Feature:
  */
 public class ConcreteProduct3 implements Product {
+    @Override
     public void show() {
         System.out.println("产品C");
     }
