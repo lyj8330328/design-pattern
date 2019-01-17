@@ -1,5 +1,10 @@
 package com.design.pattern.abstractfactory;
 
+import javax.swing.text.Keymap;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 /**
  * @Author: 98050
  * @Time: 2019-01-10 14:59
@@ -16,5 +21,6 @@ public class Client {
         abstractIngredientFactory2.createIngredientA().show();
         abstractIngredientFactory2.createIngredientB().show();
 
+        List<String> list = new ArrayList<String>();
     }
 }
