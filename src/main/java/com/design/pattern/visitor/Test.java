@@ -10,14 +10,5 @@ public class Test {
     public static void main(String[] args) {
         ComputerPart computer = new Computer();
         computer.accept(new ComputerPartVisitorImpl());
-
-        ComputerPart keyboard = new Keyboard();
-        keyboard.accept(new ComputerPartVisitorImpl());
-
-        ComputerPart mouse = new Mouse();
-        mouse.accept(new ComputerPartVisitorImpl());
-
-        ComputerPart monitor = new Monitor();
-        monitor.accept(new ComputerPartVisitorImpl());
     }
 }
