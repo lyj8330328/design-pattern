@@ -40,5 +40,12 @@ public class Test {
         UserService userService1 = (UserService) cglibProxy.getInstance(new UserServiceImpl());
         userService1.add();
 
+
+        Employee employee = new Employee();
+        InvocationHandlerImpl invocationHandler1 = new InvocationHandlerImpl(employee);
+        ClassLoader loader2 = employee.getClass().getClassLoader();
+        Class<?>[] interfaces2 = employee.getClass().getInterfaces();
+        Employee o = (Employee) Proxy.newProxyInstance(loader2, interfaces2, invocationHandler1);
+        o.add();
     }
 }
